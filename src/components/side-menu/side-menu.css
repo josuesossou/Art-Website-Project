@@ -1,0 +1,21 @@
+#full-arts-link {
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#full-arts-link .link:first-child {
+    color: #ff7653;
+}
+.link {
+    text-decoration: none;
+    font-size: 1em;
+    transition: 1s ease;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+}
+
+.link:hover {
+    font-size: 1.2em;
+}

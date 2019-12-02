@@ -1,0 +1,212 @@
+/* #wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+} */
+.coverViewport {
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+#bgImage {
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+}
+
+#fancy-slide-show {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay {
+    background-color: rgba(231, 241, 245, 0.719);
+    position: absolute;
+    z-index: 1;
+}
+
+#fancy-slide-show section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    position: relative;
+}
+
+#first-image {
+    width: 0;
+    height: 0;
+    top: 90%;
+    opacity: 0;
+    animation: firstAnimation 2s;
+    animation-fill-mode: forwards;
+    left: 87.5%;
+    /* animation-play-state: running; */
+}
+@keyframes firstAnimation {
+    from {width: 0; left: 87.5%; height: 0; top: 90%; opacity: 0;}
+    to {width: 10%; left: 75%; height: 25%; top:50%; opacity: 0.25;}
+}
+#second-image {
+    width: 10%;
+    height: 25%;
+    top: 50%;
+    opacity: 0.25;
+    animation: secondAnimation 2s;
+    animation-fill-mode: forwards;
+    left: 75%;
+}
+@keyframes secondAnimation {
+    from {width: 10%; left: 75%; height: 25%; top: 50%; opacity: 0.25;}
+    to {width: 20%; left: 50%; height: 40%; top: 40%; opacity: 0.5;}
+}
+#third-image {
+    width: 20%;
+    height: 40%;
+    top: 40%;
+    opacity: 0.5;
+    animation: thirdAnimation 2s;
+    animation-fill-mode: forwards;
+    left: 50%;
+}
+@keyframes thirdAnimation {
+    from {width: 20%; left: 50%; height: 40%; top: 40%; opacity: 0.5;}
+    to {width: 40%; left: 0; height: 90%; top: 0%; opacity: 1;}
+}
+#fourth-image {
+    width: 40%;
+    height: 90%;
+    opacity: 1;
+    animation: fourthAnimation 2s;
+    animation-fill-mode: forwards;
+    left: 0;
+    top: 0
+}
+@keyframes fourthAnimation {
+    from {width: 40%; left: 0; height: 90%; top:0; opacity: 1;}
+    to {width: 0%; left: 0; height: 0; top: 0; opacity: 0;}
+}
+
+.one {
+    background-color: yellow;
+}
+.two {
+    background-color: rebeccapurple;
+}
+.three {
+    background-color: red;
+}
+.four {
+    background-color: blue;
+}
+
+#fancy-slide-show section span {
+    position: absolute;
+    display: block;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.282);
+}
+
+#veiw-all-button {
+    z-index: 5;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+}
+#veiw-all-button button span {
+    font-size: 0;
+    transition: font-size 0.5s ease-out 0s;
+    display: inline-block;
+    text-align: center;
+    line-height: 0;
+    position: relative;
+    color: rgb(112, 112, 112);
+    z-index: 1;
+}
+#veiw-all-button button:hover span {
+    font-size: 1rem;
+    transition: font-size 0.5s ease-in 0.5s;
+}
+#veiw-all-button button p {
+    font-size: 1rem;
+    line-height: 0;
+    text-align: center;
+    margin-right: 0;
+    transition: all 0.5s ease-in 0.5s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: rgb(112, 112, 112);
+}
+#veiw-all-button button:hover p {
+    margin-right: 3px;
+    font-size: 0rem;
+    transition: all 0.5s ease-out;
+}
+#veiw-all-button button .bg-color-gradient {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: width 1s;
+    background: #cfe8ff;
+    align-self: flex-start;
+}
+#veiw-all-button button:hover .bg-color-gradient {
+    width: 100%;
+}
+#veiw-all-button button {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    outline: 0;
+    border-radius: 25px;
+    background: white;
+    border: 0px;
+    box-shadow: 0px rgba(0, 0, 0, 0.082);
+    transition: all 1s;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: bold;
+}
+#veiw-all-button button:hover {
+    width: 150px;
+    right: 0;
+    box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.082);
+    animation-play-state: paused;
+}
+#shake-one {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+#shake-two {
+    animation-play-state: paused;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); background-color: white;}
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); background-color: #ff7653;}
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); background-color: white;}
+  }
