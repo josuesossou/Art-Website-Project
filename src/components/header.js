@@ -28,6 +28,8 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
         style={{
           color: `white`,
           textDecoration: `none`,
+          fontWeight: 900,
+          fontFamily: 'Ubuntu, sans-serif',
         }}
       >
         {siteTitle}
@@ -51,6 +53,8 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            fontWeight: 600,
+            fontFamily: 'Quicksand, sans-serif',
           }}
           className="header-link"
         >
@@ -59,13 +63,15 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
       }
       <AniLink 
         paintDrip
-        to="full-arts"
+        to="/full-arts"
         hex="#cfe8ff"
         duration={1}
         style={{
           margin: `0 1rem`,
           color: `white`,
           textDecoration: `none`,
+          fontWeight: 600,
+          fontFamily: 'Quicksand, sans-serif',
         }}
         className="header-link"
       >
@@ -81,6 +87,8 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
           margin: `0 1rem`,
           color: `white`,
           textDecoration: `none`,
+          fontWeight: 600,
+          fontFamily: 'Quicksand, sans-serif',
         }}
         className="header-link"
       >
@@ -92,12 +100,13 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
         direction="right"
         duration={1}
         bg="#ffffff"
-        to="artist-statement"
+        to="/artist-statement"
         style={{
           margin: `0 1rem`,
           color: `white`,
           textDecoration: `none`,
-          
+          fontWeight: 600,
+          fontFamily: 'Quicksand, sans-serif',
         }}
         className="header-link"
       >

@@ -23,6 +23,7 @@
     "react-icons": "^3.8.0"
   },
   "devDependencies": {
+    "ftp-deploy": "^2.3.6",
     "prettier": "^1.19.1"
   },
   "keywords": [
