@@ -10,7 +10,7 @@
 }
 
 #bgImage {
-    background-image: url('../../images/background.jpg');
+    background-image: url('/~jsossou/public/static/background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
