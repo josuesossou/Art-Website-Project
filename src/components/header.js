@@ -23,7 +23,7 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
         cover
         direction="bottom"
         duration={1}
-        to="/~jsossou/public/"
+        to="/"
         bg="#ff7653"
         style={{
           color: `white`,
@@ -48,7 +48,7 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
           cover
           direction="bottom"
           duration={1}
-          to="/~jsossou/public/"
+          to="/"
           bg="#ff7653"
           style={{
             color: `white`,
@@ -63,7 +63,7 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
       }
       <AniLink 
         paintDrip
-        to="/~jsossou/public/full-arts"
+        to="full-arts"
         hex="#cfe8ff"
         duration={1}
         style={{
@@ -80,7 +80,7 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
       <AniLink 
         cover
         direction="right"
-        to="/~jsossou/public/about"
+        to="/about"
         bg="#ffffff"
         duration={1}
         style={{
@@ -100,7 +100,7 @@ const Header = ({ siteTitle, bgColor, isHome }) => (
         direction="right"
         duration={1}
         bg="#ffffff"
-        to="/~jsossou/public/artist-statement"
+        to="/artist-statement"
         style={{
           margin: `0 1rem`,
           color: `white`,

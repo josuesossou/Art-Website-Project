@@ -74,7 +74,7 @@ class Home extends React.Component{
           </section>
         </div>
         <div id="veiw-all-button">
-          <AniLink paintDrip hex="#cfe8ff" to="/~jsossou/public/full-arts">
+          <AniLink paintDrip hex="#cfe8ff" to="full-arts">
             <button id={this.state.shake}>
               <div className="bg-color-gradient"></div>
               <p>&rarr;</p>

@@ -8,7 +8,7 @@ const SideMenu =  ({ currentPage }) => (
         <AniLink 
             cover
             direction="bottom"
-            to="/~jsossou/public/"
+            to="/"
             bg="#ff7653"
             duration={1}
             className="link"
@@ -18,7 +18,7 @@ const SideMenu =  ({ currentPage }) => (
         <AniLink 
             cover
             direction="right"
-            to="/~jsossou/public/about"
+            to="/about"
             bg="#ffffff"
             duration={1}
             className="link"
@@ -29,7 +29,7 @@ const SideMenu =  ({ currentPage }) => (
             <AniLink 
                 cover
                 direction="right"
-                to="/~jsossou/public/artist-statement"
+                to="/artist-statement"
                 bg="#ffffff"
                 duration={1}
                 className="link"
@@ -40,7 +40,7 @@ const SideMenu =  ({ currentPage }) => (
         {currentPage === 'All Arts' ? null :
             <AniLink 
                 paintDrip
-                to="/~jsossou/public/full-arts"
+                to="/full-arts"
                 hex="#cfe8ff"
                 bg="#ffffff"
                 duration={1}

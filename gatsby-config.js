@@ -20,11 +20,11 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/`,
+        start_url: `${__dirname}/src/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/arts/turtle3.png`, // This path is relative to the root of the site.
+        icon: `src/images/arts/Tutle3.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-transition-link`,
